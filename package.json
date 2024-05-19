@@ -1,7 +1,7 @@
 {
-  "name": "binglybong",
-  "main": "expo-router/entry",
+  "name": "BinglyBong",
   "version": "1.0.0",
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",

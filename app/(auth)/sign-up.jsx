@@ -76,13 +76,13 @@ const SignUp = () => {
         <View className="w-full justify-center min-h-[83vh] px-4 my-6">
           {/* // Image component for displaying the logo */}
           <Image
-            source={images.logo}
+            source={images.cards}
+            className="max-w-[100px] w-full h-[100px]"
             resizeMode="contain"
-            className="w-[115px] h-[35px]"
           />
           {/* // Text component for the signup screen title */}
           <Text className="text-white text-2xl text-semibold mt-10 font-psemibold">
-            Sign Up to Aora
+            Sign Up to UBL
           </Text>
           {/* // Form field for username input */}
           <Formfield

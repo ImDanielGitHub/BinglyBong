@@ -19,11 +19,6 @@ export default function App() {
       >
         <View className="w-full flex justify-center items-center h-[85vh] px-4">
           <Image
-            source={images.logo}
-            className="w-[130px] h-[84px]"
-            resizeMode="contain"
-          />
-          <Image
             source={images.cards}
             className="max-w-[380px] w-full h-[300px]"
             resizeMode="contain"
@@ -33,7 +28,7 @@ export default function App() {
             can be eddited manuallly to display what we want to show */}
             <Text className="text-3xl text-white font-bold text-center">
               Discover Endless Posibilities with {""}
-              <Text className="text-secondary-200">Aora</Text>
+              <Text className="text-secondary-200">Bingly Bong</Text>
             </Text>
             <Image
               source={images.path}
@@ -44,8 +39,8 @@ export default function App() {
           </View>
           {/* //TODO: Update text to be relevant to the uni the Aora text */}
           <Text className="text-sm font-pregular text-gray-100 mt-7 text-center">
-            Where creativity meets inivation: embarkl on a journey of limitless
-            exploration with Aora
+            Unlock a world of adventure with BinglyBong, your guide to the
+            hidden corners and vibrant events of Waikato University.
           </Text>
           <CustomButton
             title="Continue With Email"

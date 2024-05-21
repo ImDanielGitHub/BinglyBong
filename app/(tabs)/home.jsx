@@ -7,7 +7,7 @@ import Trending from "../../components/Trending";
 import EmptyState from "../../components/EmptyState";
 const Home = () => {
   return (
-    <SafeAreaView className="bg-primary">
+    <SafeAreaView className="bg-primary border-2 h-full">
       <FlatList
         data={[]}
         keyExtractor={(item) => item.$id}
@@ -49,11 +49,12 @@ const Home = () => {
             </View>
           </View>
         )}
-        ListEmptyComponent={() => <EmptyState
-          title="No events found"
-          subtitle="Explore and create your own experiences!"
-        
-        />}
+        ListEmptyComponent={() => (
+          <EmptyState
+            title="No events found"
+            subtitle="Explore and create your own experiences!"
+          />
+        )}
       />
     </SafeAreaView>
   );

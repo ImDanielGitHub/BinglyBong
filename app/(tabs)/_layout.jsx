@@ -68,6 +68,22 @@ const TabsLayout = () => {
               />
             ),
           }}
+        />{" "}
+        <Tabs.Screen
+          name="maps"
+          options={{
+            title: "Maps",
+            headerShown: false, // Hides the header for the screen
+            tabBarIcon: ({ color, focused }) => (
+              // Uses the TabIcon component to render the icon for this tab
+              <TabIcon
+                icon={icons.maps}
+                color={color}
+                name="Maps"
+                focused={focused}
+              />
+            ),
+          }}
         />
         <Tabs.Screen
           name="bookmark"

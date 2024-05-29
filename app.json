@@ -14,6 +14,7 @@
     "scheme": "BinglyBong",
     "assetBundlePatterns": ["**/*"],
     "ios": {
+      "package": "com.ubl.binglybong",
       "supportsTablet": true
     },
     "android": {
@@ -21,7 +22,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.jsm.BinglyBong"
+      "package": "com.ubl.binglybong"
     },
     "web": {
       "favicon": "./assets/favicon.png"

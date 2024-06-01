@@ -12,10 +12,13 @@
       "backgroundColor": "#ffffff"
     },
     "scheme": "BinglyBong",
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "package": "com.ubl.binglybong",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ubl.binglybong"
     },
     "android": {
       "adaptiveIcon": {
@@ -27,6 +30,9 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": ["expo-router", "expo-font"]
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ]
   }
 }

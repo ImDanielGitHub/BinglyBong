@@ -12,6 +12,7 @@ import eyeHide from "../assets/icons/eye-hide.png";
 import eye from "../assets/icons/eye.png";
 import play from "../assets/icons/play.png";
 import maps from "../assets/icons/maps.png";
+import help from "../assets/icons/help.png";
 
 export default {
   play,
@@ -28,4 +29,5 @@ export default {
   eyeHide,
   eye,
   maps,
+  help
 };

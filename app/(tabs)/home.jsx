@@ -15,27 +15,33 @@ import EmptyState from "../../components/EmptyState";
 import { useState } from "react";
 import { getAllPosts } from "../../lib/appwrite";
 import useAppwrite from "../../lib/useAppwrite";
+import VideoCard from "../../components/VideoCard";
 
 const Home = () => {
-  //const { data: posts, refetch } = useAppwrite(getAllPosts);
+  const { data: posts, refetch } = useAppwrite(getAllPosts);
 
   const [refreshing, setRefreshing] = useState(false);
 
   const onRefresh = async () => {
     setRefreshing(true);
-
     //recall all posts or events from the server
-
+    await refetch();
     setRefreshing(false);
   };
 
   return (
     <SafeAreaView className="bg-primary h-full">
       <FlatList
-        data={[{ id: 1 }, { id: 2 }, { id: 3 }]}
+        data={posts ?? []}
         keyExtractor={(item) => item.$id}
         renderItem={({ item }) => (
-          <Text className="text-3xl text-white">{item.id}</Text>
+          //displays the tiitle of the uploaded post item
+          // <Text className="text-3xl text-white">{item.title}</Text>
+
+         <VideoCard video={item} />
+
+
+
         )}
         ListHeaderComponent={() => (
           <View className="my-6 px-4 space-y-6">

@@ -24,16 +24,16 @@ export default function App() {
             resizeMode="contain"
           />
           <View className="relative mt-5">
-            {/* here is where the onbaording text message and colour
-            can be eddited manuallly to display what we want to show */}
+            {/* here is where the onboarding text message and color
+            can be edited manually to display what we want to show */}
             <Text className="text-3xl text-white font-bold text-center">
-              Discover Endless Posibilities with {""}
+              Discover Endless Possibilities with {""}
               <Text className="text-secondary-200">Bingly Bong</Text>
             </Text>
             <Image
               source={images.path}
               //TODO: fix the sizing so the orange underline sits directly beneath the Aora text
-              className="w-[136px] h-[15px] absolut -bottom-2 -right-20 "
+              className="w-[136px] h-[15px] absolute -bottom-2 -right-20 "
               resizeMode="contain"
             />
           </View>
@@ -45,14 +45,17 @@ export default function App() {
           <CustomButton
             title="Continue With Email"
             handlePress={() => {
-              router.push("/sign-in");
+              // TODO: Temporary dev change to route directly to Home screen
+              // This is a temporary change for development purposes to directly route to Home
+              // To restore the original functionality, change the router.push back to '/sign-in'
+              router.push("/home");
             }}
             containerStyles="w-full mt-7"
           />
         </View>
       </ScrollView>
 
-      {/* This allows us to control the visnbility of the status bar where battery and volume etc are displayed
+      {/* This allows us to control the visibility of the status bar where battery and volume etc are displayed
       depending on the app's theme and design */}
       <StatusBar backgroundColor="#161622" style="light" />
     </SafeAreaView>

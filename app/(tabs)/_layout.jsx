@@ -86,6 +86,21 @@ const TabsLayout = () => {
           }}
         />
         <Tabs.Screen
+          name="help"
+          options={{
+            title: "Help",
+            headerShown: false, // Hides the header for the screen
+            tabBarIcon: ({ color, focused }) => (
+              <TabIcon
+                icon={icons.help}
+                color={color}
+                name="Help"
+                focused={focused}
+              />
+            ),
+          }}
+        />
+        <Tabs.Screen
           name="bookmark"
           options={{
             title: "Bookmark",
